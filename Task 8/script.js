@@ -31,6 +31,11 @@ function Calculator (num1, num2) {
 // console.log(myCalculator.multiplication());
 // console.log(myCalculator.division());
 
+
+// Viskas kas apacioje atlikta papildomai neprasant uzduotyje.
+// Padaryta, kad vartotojas per narsykle galetu pats pasirinkti norima veiksma ir ivesti skaicius.
+// Stilius nepritaikytas
+// Užduočiai atloikti pagal sakygla kas apacioje reikia uzkomentuoti, o virsuje 26-32 eilutes atkomentuoti.
 document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
     let num1 = parseInt(document.querySelector("input[name=number1]").value);
