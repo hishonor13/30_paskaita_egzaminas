@@ -36,6 +36,12 @@
   border-radius: 5px;
 }
 
+.kortele:hover {
+  color: white;
+  background-color: rgb(93, 168, 156);
+  transition: 0.3s;
+}
+
 span {
   color: blue;
 }

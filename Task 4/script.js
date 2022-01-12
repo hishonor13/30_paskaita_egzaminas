@@ -23,7 +23,7 @@ fetch(ENDPOINT)
             myH.innerHTML += myData;
             div.append(myH);
             myH.append(br);
-            myData = `<span>Modeliai</span>: ${item.models}`;      
+            myData = `<span>Modeliai: </span> ${item.models}`;      
             myH.innerHTML += myData;
             div.append(myH);
             document.querySelector("#output").append(div);
