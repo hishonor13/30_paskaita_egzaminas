@@ -16,6 +16,7 @@ document.querySelector("#btn").addEventListener("click", () => {
         .then((resp) => resp.json())
         .then((data) => {
             document.querySelector("#message").innerHTML = "";
+
             data.forEach((item, index) => {
                 let div = document.createElement("div")
                 div.setAttribute("class", "kortele");
@@ -25,7 +26,7 @@ document.querySelector("#btn").addEventListener("click", () => {
                 div.append(myH)
                 document.querySelector("#output").append(div);
             });
-        })
+    })
 })
 
 
