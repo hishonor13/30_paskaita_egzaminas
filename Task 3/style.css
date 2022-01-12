@@ -72,6 +72,10 @@
   background-color: rgb(219, 247, 194);
 }
 
+.kortele:hover {
+  background-color: rgb(192, 219, 168);
+}
+
 img {
   height: 50px;
 }
