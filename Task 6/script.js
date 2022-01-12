@@ -19,3 +19,22 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+function getUserAverageAge (users) {
+  let sum = 0;
+  users.forEach(element => {
+    sum += element.age;
+  });
+  return sum / users.length;
+}
+
+function getUsersNames (users) {
+  let newArr = [];
+  users.forEach(element => {
+    newArr.push(element.name)
+  });
+  return newArr
+}
+
+console.log(getUserAverageAge(users));
+console.log(getUsersNames(users));
