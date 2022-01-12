@@ -59,3 +59,14 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+.kortele {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 2rem;
+  height: 5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
