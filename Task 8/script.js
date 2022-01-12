@@ -23,7 +23,9 @@ function Calculator (num1, num2) {
     }
 }
 
-let myCalculator = new Calculator(16, 8)
+let skaicius1 = 16;
+let skaicius2 = 8;
+let myCalculator = new Calculator(skaicius1, skaicius2)
 console.log(myCalculator.sum());
 console.log(myCalculator.subtraction());
 console.log(myCalculator.multiplication());

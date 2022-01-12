@@ -31,9 +31,9 @@ function getUserAverageAge (users) {
 function getUsersNames (users) {
   let newArr = [];
   users.forEach(element => {
-    newArr.push(element.name)
+    newArr.push(element.name);
   });
-  return newArr
+  return newArr;
 }
 
 console.log(getUserAverageAge(users));

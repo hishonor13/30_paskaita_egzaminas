@@ -21,10 +21,10 @@ const users = [
 ];
 
 function filterDogOwers (dogs) {
-  return dogs.filter(suo => suo.hasDog == true )
+  return dogs.filter(suo => suo.hasDog == true);
 }
 function filterAdults (users) {
-  return users.filter(adults => adults.age >= 18)
+  return users.filter(adults => adults.age >= 18);
 }
 
 console.log(filterDogOwers(users));
