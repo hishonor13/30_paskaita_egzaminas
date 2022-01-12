@@ -18,12 +18,18 @@ document.querySelector("#btn").addEventListener("click", () => {
             document.querySelector("#message").innerHTML = "";
 
             data.forEach((item, index) => {
-                let div = document.createElement("div")
+                let div = document.createElement("div");
                 div.setAttribute("class", "kortele");
                 let myH = document.createElement("h4");
-                let myData = `${item.login} - ${item.avatar_url}`;
-                myH.append(myData)
-                div.append(myH)
+                let myData = item.login;
+                let imgUrl = item.avatar_url;
+                let img = document.createElement("img");
+                let br = document.createElement("br");
+                img.setAttribute("src", imgUrl);
+                myH.append(img);
+                myH.append(br);
+                myH.append(myData);
+                div.append(myH);
                 document.querySelector("#output").append(div);
             });
     })
