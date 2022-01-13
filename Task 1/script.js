@@ -13,7 +13,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
     document.querySelector("#output").innerHTML = "";
     let kg = document.querySelector("input[name=svoris]").value;
-    let lb = kg * 2.2046 + " kg";
+    let lb = kg * 2.2046 + " lb";
     let g = kg / 0.001 + " g";
     let oz = kg * 35.274 + " oz";
 

@@ -27,3 +27,28 @@
   margin-top: 50px;
   color: #333;
 }
+
+.kortele {
+  margin: 1rem auto;
+  width: 80%;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgb(71, 128, 118);
+}
+
+.kortele:hover {
+  color: white;
+  background-color: rgb(93, 168, 156);
+  transition: 0.2s;
+}
+
+#sp {
+  color: blue;
+}
+
+#size {
+  font-size: x-large;
+  font-weight: bold;
+}
+

@@ -5,8 +5,46 @@
     <title>Objects</title>
     <!-- Custom JS -->
     <script defer src="./script.js"></script>
+    <style>
+      body {
+        background-color: rgb(226, 192, 43);
+      }
+      #title {
+        padding-top: 10rem;
+        text-align: center;
+        font-size: xx-large;
+      }
+      form, #zzz {
+        text-align: center;
+      }
+      #xxx {
+        height: 30px;
+        text-align: center;
+      }
+      #zzz, #mySubmit {
+        height: 36px;
+      }
+      #mySubmit {
+        margin: 0.5rem;
+        width: 8rem;
+      }
+    </style>
   </head>
   <body>
     <!-- HTML not needed -->
+    <h1 id="title">Skaičiuotuvas</h1>
+    <form action="#">
+      <input type="number" name="number1" id="xxx" placeholder="Pirmas skaičius" required>
+      <input type="number" name="number2" id="xxx" placeholder="Antras skaičius" required>
+      <select name="selektas" id="zzz">
+        <option value="" style="color: rgb(177, 174, 174)">-- Pasirinkite norimą veiksmą --</option>
+        <option value="sum">Suma</option>
+        <option value="subtraction">Atimtis</option>
+        <option value="multiplication">Daugyba</option>
+        <option value="division">Dalyba</option>
+      </select>
+      <input type="submit" value="Skaičiuoti" id="mySubmit">
+      <div id="ats"></div>
+    </form>
   </body>
 </html>
