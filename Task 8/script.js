@@ -43,29 +43,29 @@ document.querySelector("form").addEventListener("submit", (e) => {
     let selectas = document.getElementById("zzz");
     let procedura = selectas.options[selectas.selectedIndex].value;
     let myCalculator = new Calculator(num1, num2)
-    let myH1 = document.createElement("h1");
+    let myH2 = document.createElement("h2");
     document.querySelector("#ats").innerHTML = "";
     let data = "";
     switch(procedura){
         case "sum":
             data = myCalculator.sum();
-            myH1.append(data);
-            ats.append(myH1);
+            myH2.append("Atsakymas: ", data);
+            ats.append(myH2);
             break;
         case "subtraction":
             data = myCalculator.subtraction();
-            myH1.append(data);
-            ats.append(myH1);
+            myH2.append("Atsakymas: ", data);
+            ats.append(myH2);
             break;
         case "multiplication":
             data = myCalculator.multiplication();
-            myH1.append(data);
-            ats.append(myH1);
+            myH2.append("Atsakymas: ", data);
+            ats.append(myH2);
             break;
         case "division":
             data = myCalculator.division();
-            myH1.append(data);
-            ats.append(myH1);
+            myH2.append("Atsakymas: ", data);
+            ats.append(myH2);
             break;
     }
 })
