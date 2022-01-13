@@ -19,11 +19,11 @@ fetch(ENDPOINT)
             div.setAttribute("class", "kortele");
             let myH = document.createElement("h4");
             let br = document.createElement("br");
-            let myData = `<span>Markė: </span> ${item.brand}`;
+            let myData = `<span id="size"> <span id="sp">Markė: </span> ${item.brand}</span>`;
             myH.innerHTML += myData;
             div.append(myH);
             myH.append(br);
-            myData = `<span>Modeliai: </span> ${item.models}`;      
+            myData = `<span id="sp">Modeliai: </span> ${item.models}`;      
             myH.innerHTML += myData;
             div.append(myH);
             document.querySelector("#output").append(div);
